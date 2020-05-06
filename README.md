@@ -4,6 +4,8 @@
 
 Panoptic provides a useful display of your deployments.
 
+![Preview image.](./.github/assets/screenshot.png)
+
 ## Usage
 
 ### From Source
