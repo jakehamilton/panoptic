@@ -43,3 +43,11 @@ docker run -it --rm \
     -p 3000:3000 \
     jakehamilton/panoptic --help
 ```
+
+### From Release
+
+Download the latest release for your platform [here](https://github.com/jakehamilton/panoptic/releases).
+
+```shell
+./panoptic --help
+```
