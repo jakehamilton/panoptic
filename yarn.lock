@@ -487,6 +487,14 @@ chalk@^3.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
+chalk@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.0.0.tgz#6e98081ed2d17faab615eb52ac66ec1fe6209e72"
+  integrity sha512-N9oWFcegS0sFr9oh1oz2d7Npos6vNoWW9HvtCg5N1KRFpUhaAhvTv5Y58g880fZaEYSNm3qDz8SU1UrGvp+n7A==
+  dependencies:
+    ansi-styles "^4.1.0"
+    supports-color "^7.1.0"
+
 class-utils@^0.3.5:
   version "0.3.6"
   resolved "https://registry.yarnpkg.com/class-utils/-/class-utils-0.3.6.tgz#f93369ae8b9a7ce02fd41faad0ca83033190c463"
@@ -1498,6 +1506,13 @@ levn@~0.3.0:
   dependencies:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
+
+littlelog@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/littlelog/-/littlelog-1.0.0.tgz#0c756b97f94071705b398e9747db1a5eafc2edc3"
+  integrity sha512-cPFsWlPk0Adp66hU5uRM6sIrzCxYkkh4G04SibiRHqOEFu7+HUvXUD1bDYpQ1Qs9FAf/DtfX02grGk/eVfd6Jw==
+  dependencies:
+    chalk "^4.0.0"
 
 loader-utils@^1.0.2:
   version "1.4.0"

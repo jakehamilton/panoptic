@@ -8,7 +8,9 @@
   "license": "UNLICENSED",
   "private": true,
   "pkg": {
-    "assets": ["./src/public/**/*"]
+    "assets": [
+      "./src/public/**/*"
+    ]
   },
   "scripts": {
     "start": "node $npm_package_main",
@@ -22,6 +24,7 @@
     "arg": "^4.1.3",
     "express": "^4.17.1",
     "kubernetes-client": "^9.0.0",
+    "littlelog": "^1.0.0",
     "pkg": "^4.4.8",
     "prettier": "^2.0.5"
   },
