@@ -1,0 +1,29 @@
+{
+  "name": "panoptic",
+  "version": "1.0.0",
+  "description": "A viewer for running deployments.",
+  "main": "src/index.js",
+  "bin": "src/index.js",
+  "author": "Jake Hamilton <jake.hamilton@sureprep.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "pkg": {
+    "assets": ["./src/public/**/*"]
+  },
+  "scripts": {
+    "start": "node $npm_package_main",
+    "build": "yarn package && yarn docker",
+    "docker": "docker build -t jakehamilton/panoptic .",
+    "package": "pkg . --output ./dist/panoptic --target latest-macos-x64,latest-win-x64,latest-linux-x64"
+  },
+  "dependencies": {
+    "@leverage/core": "^3.0.0",
+    "@leverage/plugin-http": "^3.1.0",
+    "arg": "^4.1.3",
+    "express": "^4.17.1",
+    "kubernetes-client": "^9.0.0",
+    "pkg": "^4.4.8",
+    "prettier": "^2.0.5"
+  },
+  "devDependencies": {}
+}

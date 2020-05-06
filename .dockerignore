@@ -1,0 +1,9 @@
+.vscode
+node_modules
+src
+.dockerignore
+Dockerfile
+.prettierignore
+.prettierrc.json
+package*.json
+yarn*.json
