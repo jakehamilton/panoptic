@@ -48,14 +48,9 @@ const main = async () => {
         };
 
         log.trace('Adding units to manager.');
-        manager.add(
-            http,
-            config,
-            ...middleware,
-            ...plugins,
-            ...services,
-            ...api,
-        );
+        manager.add(http, ...plugins);
+        manager.add(config);
+        manager.add(...middleware, ...services, ...api);
 
         log.info(`Starting server on port "${port}".`);
         http.listen(Number(port));

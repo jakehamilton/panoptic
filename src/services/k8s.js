@@ -19,7 +19,10 @@ class K8s extends Service {
 
         log.info('Creating Kubernetes client.');
         this.client = new Client();
-        this.initialize();
+
+        util.microtask(() => {
+            this.initialize();
+        });
     }
 
     async initialize() {
