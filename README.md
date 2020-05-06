@@ -33,3 +33,13 @@ yarn start --help
 # Or directly
 node src/index.js --help
 ```
+
+### Docker
+
+```shell
+docker run -it --rm \
+    -v ./path/to/kubeconfig:/home/root/.kube/config \
+    -e KUBECONFIG=/home/root/.kube/config \
+    -p 3000:3000 \
+    jakehamilton/panoptic --help
+```
