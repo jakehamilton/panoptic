@@ -32,15 +32,23 @@ const help = chalk`
         --namespace-deny      A regex for filtering namespace names.
         --deployment-allow    A regex for filtering deployment names.
         --deployment-deny     A regex for filtering deployment names.
+        --service-allow       A regex for filtering deployment names.
+        --service-deny        A regex for filtering deployment names.
+        --ingress-allow       A regex for filtering ingress names.
+        --ingress-deny        A regex for filtering ingress names.
 
     {bold ALIASES}
         -h                    --help
         -v                    --verbose
         -p                    --port
-        -a                    --namespace-allow
-        -d                    --namespace-deny
-        -A                    --deployment-allow
+        -n                    --namespace-allow
+        -N                    --namespace-deny
+        -d                    --deployment-allow
         -D                    --deployment-deny
+        -s                    --service-allow
+        -S                    --service-deny
+        -i                    --ingress-allow
+        -I                    --ingress-deny
 
     {bold ENVIRONMENT}
 

@@ -3,10 +3,11 @@ import { html } from 'https://unpkg.com/htm/preact/standalone.module.js';
 
 import useCSS from '../hooks/useCSS.mjs';
 import useTheme from '../hooks/useTheme.mjs';
+import * as k8s from '../util/k8s.mjs';
 
 import Deployment from './Deployment.mjs';
 
-const Namespace = ({ namespace, deployments }) => {
+const Namespace = ({ namespace, deployments, services, ingressroutes }) => {
     useCSS(`
         .namespace {
         }
@@ -20,11 +21,18 @@ const Namespace = ({ namespace, deployments }) => {
     `);
 
     const renderDeployments = () => {
-        return deployments.map(
-            (deployment) => html`
-                <${Deployment} deployment="${deployment}" />
-            `,
-        );
+        return deployments.map((deployment) => {
+            const matchingIngresses = k8s.findIngressForDeployment(
+                ingressroutes,
+                services,
+                deployment,
+            );
+
+            return html`<${Deployment}
+                deployment="${deployment}"
+                ingressroutes="${matchingIngresses}"
+            />`;
+        });
     };
 
     return html`

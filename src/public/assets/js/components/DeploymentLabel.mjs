@@ -16,7 +16,7 @@ const DeploymentLabel = ({ name, value }) => {
         .deployment-label {
             padding-top: 0.25rem;
             padding-bottom: 0.25rem;
-            padding-left: 1rem;
+            padding-left: 0.75rem;
             padding-right: 0.75rem;
 
             margin-right: 0.5rem;

@@ -28,6 +28,8 @@ const AllDeployments = ({ resources }) => {
                 <${Namespace}
                     namespace="${namespace}"
                     deployments="${resources[namespace].deployments}"
+                    services="${resources[namespace].services}"
+                    ingressroutes="${resources[namespace].ingressroutes}"
                 />
             `,
         );
