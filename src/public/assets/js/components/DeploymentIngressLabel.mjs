@@ -8,8 +8,6 @@ import shade from '../util/shade.mjs';
 import hexToRGBA from '../util/hexToRGBA.mjs';
 import * as traefik from '../util/traefik.mjs';
 
-// traefik.render('Host(`x.com`) || Host(`y.com`)');
-
 const DeploymentLabel = ({ entrypoints, route }) => {
     const theme = useTheme();
 
